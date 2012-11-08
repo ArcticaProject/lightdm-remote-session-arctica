@@ -1,33 +1,33 @@
 
 pam_sessiondir = $(sysconfdir)/pam.d/
 pam_session_DATA = \
-	lightdm-remote-freerdp
+	lightdm-remote-x2go
 
 lightdm_sessiondir = $(datadir)/lightdm/remote-sessions
 lightdm_session_DATA = \
-	freerdp.desktop
+	x2go.desktop
 
 %.desktop: %.desktop.in
 	@sed -e "s|\@pkglibexecdir\@|$(pkglibexecdir)|" $< > $@
 
 session_startdir = $(pkgdatadir)
 session_start_SCRIPTS = \
-	freerdp-session
+	x2go-session
 
-freerdp-session: freerdp-session.in
+x2go-session: x2go-session.in
 	@sed -e "s|\@pkglibexecdir\@|$(pkglibexecdir)|" $< > $@
 	@chmod +x $@
 
 apparmordir = $(sysconfdir)/apparmor.d/
 apparmor_DATA = \
-	lightdm-remote-session-freerdp
+	lightdm-remote-session-x2go
 
-lightdm-remote-session-freerdp: lightdm-remote-session-freerdp.in
+lightdm-remote-session-x2go: lightdm-remote-session-x2go.in
 	@sed -e "s|\@pkglibexecdir\@|$(pkglibexecdir)|" $< > $@
 
 pkglibexec_PROGRAMS = \
 	socket-sucker \
-	freerdp-session-wrapper
+	x2go-session-wrapper
 
 socket_sucker_SOURCES = \
 	socket-sucker.c
@@ -37,22 +37,22 @@ socket_sucker_CFLAGS = \
 socket_sucker_LDFLAGS = \
 	-pie
 
-freerdp_session_wrapper_SOURCES = \
-	freerdp-session-wrapper.c
-freerdp_session_wrapper_CFLAGS = \
+x2go_session_wrapper_SOURCES = \
+	x2go-session-wrapper.c
+x2go_session_wrapper_CFLAGS = \
 	-DPKGDATADIR="\"$(pkgdatadir)\"" \
 	-Wall -Werror
 
 EXTRA_DIST = \
 	$(pam_session_DATA) \
-	freerdp.desktop.in \
-	freerdp-session.in \
-	lightdm-remote-session-freerdp.in
+	x2go.desktop.in \
+	x2go-session.in \
+	lightdm-remote-session-x2go.in
 
 CLEANFILES = \
-	freerdp.desktop \
-	freerdp-session \
-	lightdm-remote-session-freerdp
+	x2go.desktop \
+	x2go-session \
+	lightdm-remote-session-x2go
 
 DISTCHECK_CONFIGURE_FLAGS = --enable-localinstall
 

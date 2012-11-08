@@ -1,0 +1,7 @@
+lightdm-remote-session-freerdp (0.1-0~x2go1) UNRELEASED; urgency=low
+
+  * Initial upstream release. Forked from Canonical's
+    lightdm-remote-session-freerdp.
+
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Thu, 08 Nov 2012 22:27:37 +0100
+

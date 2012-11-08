@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=FreeRDP
+Comment=Full Screen RDP session
+Exec=@pkglibexecdir@/x2go-session-wrapper
+TryExec=@pkglibexecdir@/x2go-session-wrapper
+Icon=
+Type=Application
+X-LightDM-PAM-Service=lightdm-remote-x2go
