@@ -14,7 +14,7 @@ session_startdir = $(pkgdatadir)
 session_start_SCRIPTS = \
 	freerdp-session
 
-x2go-session: x2go-session.in
+freerdp-session: freerdp-session.in
 	@sed -e "s|\@libexecdir\@|$(libexecdir)|" $< > $@
 	@chmod +x $@
 
