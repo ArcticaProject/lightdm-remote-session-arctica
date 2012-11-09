@@ -25,7 +25,7 @@ apparmor_DATA = \
 lightdm-remote-session-x2go: lightdm-remote-session-x2go.in
 	@sed -e "s|\@pkglibexecdir\@|$(pkglibexecdir)|" $< > $@
 
-pkglibexec_PROGRAMS = \
+libexec_PROGRAMS = \
 	socket-sucker \
 	x2go-session-wrapper
 
