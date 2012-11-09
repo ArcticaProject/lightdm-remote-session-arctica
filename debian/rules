@@ -1,8 +1,5 @@
 #!/usr/bin/make -f
 
-%:
-	dh $@
-
-override_dh_installdeb:
-	dh_apparmor --profile-name=lightdm-remote-session-x2go -plightdm-remote-session-x2go
-	dh_installdeb
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/autoreconf.mk
+include /usr/share/cdbs/1/class/autotools.mk
