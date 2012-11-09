@@ -1,11 +1,11 @@
 # vim:syntax=apparmor
-# Profile for restricting lightdm remote session for FreeRDP
+# Profile for restricting lightdm remote session for X2Go
 # Based on the Guest Account Apparmor script from:
 # Author: Martin Pitt <martin.pitt@ubuntu.com>
 
 #include <tunables/global>
 
-@pkglibexecdir@/x2go-session-wrapper {
+@libexecdir@/x2go-session-wrapper {
   #include <abstractions/authentication>
   #include <abstractions/nameservice>
   #include <abstractions/wutmp>
