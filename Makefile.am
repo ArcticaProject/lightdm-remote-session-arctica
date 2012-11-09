@@ -45,9 +45,9 @@ x2go_session_wrapper_CFLAGS = \
 
 EXTRA_DIST = \
 	$(pam_session_DATA) \
-	x2go.desktop.in \
-	x2go-session.in \
-	lightdm-remote-session-x2go.in
+	freerdp.desktop.in \
+	freerdp-session.in \
+	lightdm-remote-session-freerdp.in
 
 CLEANFILES = \
 	x2go.desktop \

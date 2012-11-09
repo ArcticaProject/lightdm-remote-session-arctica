@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=X2Go
+Name=FreeRDP
 Comment=Full Screen X2Go Session
 Exec=@libexecdir@/x2go-session-wrapper
 TryExec=@libexecdir@/x2go-session-wrapper
