@@ -1,4 +1,4 @@
-lightdm-remote-session-freerdp (0.1-0~x2go1) UNRELEASED; urgency=low
+lightdm-remote-session-x2go (0.1-0~x2go1) UNRELEASED; urgency=low
 
   * Initial upstream release. Forked from Canonical's
     lightdm-remote-session-freerdp.

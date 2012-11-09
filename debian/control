@@ -1,4 +1,4 @@
-ource: lightdm-remote-session-x2go
+Source: lightdm-remote-session-x2go
 Section: misc
 Priority: extra
 Maintainer: X2Go Developers <x2go-dev@lists.berlios.de>

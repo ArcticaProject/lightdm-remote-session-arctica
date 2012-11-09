@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: lightdm-remote-session-x2go
-Source: http://launchpad.net/lightdm-remote-session-x2go
+Source: http://code.x2go.org/gitweb?p=lightdm-remote-session-x2go.git;a=summary
 
 Files: *
 Copyright: 2012, Canonical Ltd.
