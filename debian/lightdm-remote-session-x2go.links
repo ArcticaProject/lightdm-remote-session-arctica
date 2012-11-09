@@ -1,0 +1,1 @@
+/etc/pam.d/lightdm-remote-x2go /etc/pam.d/lightdm-remote-freerdp

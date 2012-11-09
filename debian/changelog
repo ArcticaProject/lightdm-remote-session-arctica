@@ -2,6 +2,8 @@ lightdm-remote-session-x2go (0.0.0.1-0~x2go1) UNRELEASED; urgency=low
 
   * Initial upstream release. Forked from Canonical's
     lightdm-remote-session-freerdp (by  Ted Gould <ted@canonical.com>).
+  * Be a drop-in replacement for lightdm-remote-session-freerdp for now
+    until Canonical offers X2Go sessions on
+    https://uccs.landscape.canonical.com.
 
  -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Thu, 08 Nov 2012 22:27:37 +0100
-

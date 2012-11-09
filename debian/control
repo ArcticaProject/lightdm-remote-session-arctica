@@ -23,6 +23,10 @@ Depends:
  pyhoca-cli,
  libpam-x2go,
  lightdm (>= 1.3.3-0~)
+Conflicts:
+ lightdm-remote-session-freerdp,
+Replaces:
+ lightdm-remote-session-freerdp,
 Suggests:
  apparmor,
 Description: Log into X2Go sessions via LightDM
