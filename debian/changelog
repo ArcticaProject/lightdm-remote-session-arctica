@@ -1,4 +1,4 @@
-lightdm-remote-session-x2go (0.0.0.1-0~x2go1) UNRELEASED; urgency=low
+lightdm-remote-session-x2go (0.0.0.1-0~x2go1) unstable; urgency=low
 
   * Initial upstream release. Forked from Canonical's
     lightdm-remote-session-freerdp (by  Ted Gould <ted@canonical.com>).
@@ -9,4 +9,4 @@ lightdm-remote-session-x2go (0.0.0.1-0~x2go1) UNRELEASED; urgency=low
       -> Thus, conflict with and replace lightdm-remote-session-freerdp.
     + Versioned dependency on pyhoca-cli (>= 0.2.1.0).
 
- -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Thu, 08 Nov 2012 22:27:37 +0100
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Sat, 10 Nov 2012 22:19:55 +0100
