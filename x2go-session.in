@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -e ~/.x2go-socket ]; then
-	@libexecdir@/socket-sucker | /usr/bin/pyhoca-cli --from-stdin --add-to-known-hosts --kbd-type auto 2>&1 | logger -t lightdm-remote-session-x2go --
+	@libexecdir@/socket-sucker | /usr/bin/pyhoca-cli --from-stdin --add-to-known-hosts --kbd-type auto --sound pulse 2>&1 | logger -t lightdm-remote-session-x2go --
 else
 	zenity --warning --text="Unable to locate X2GoSession/PyHoca socket"
 fi;
