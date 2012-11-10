@@ -12,9 +12,9 @@ lightdm_session_DATA = \
 
 session_startdir = $(pkgdatadir)
 session_start_SCRIPTS = \
-	freerdp-session
+	x2go-session
 
-freerdp-session: freerdp-session.in
+x2go-session: x2go-session.in
 	@sed -e "s|\@libexecdir\@|$(libexecdir)|" $< > $@
 	@chmod +x $@
 
@@ -46,12 +46,12 @@ x2go_session_wrapper_CFLAGS = \
 EXTRA_DIST = \
 	$(pam_session_DATA) \
 	freerdp.desktop.in \
-	freerdp-session.in \
+	x2go-session.in \
 	lightdm-remote-session-freerdp.in
 
 CLEANFILES = \
 	freerdp.desktop \
-	freerdp-session \
+	x2go-session \
 	lightdm-remote-session-freerdp
 
 DISTCHECK_CONFIGURE_FLAGS = --enable-localinstall

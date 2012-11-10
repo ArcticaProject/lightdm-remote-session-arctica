@@ -1,9 +1,0 @@
-#!/bin/bash
-
-if [ -e ~/.x2go-socket ]; then
-	@libexecdir@/socket-sucker | /usr/bin/pyhoca-cli --from-stdin
-else
-	zenity --warning --text="Unable to locate X2GoSession/PyHoca socket"
-fi;
-
-rm -f ~/.x2go-socket
