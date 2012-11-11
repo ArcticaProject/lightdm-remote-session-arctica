@@ -26,16 +26,7 @@ lightdm-remote-session-freerdp: lightdm-remote-session-freerdp.in
 	@sed -e "s|\@libexecdir\@|$(libexecdir)|" $< > $@
 
 libexec_PROGRAMS = \
-	socket-sucker \
 	x2go-session-wrapper
-
-socket_sucker_SOURCES = \
-	socket-sucker.c
-socket_sucker_CFLAGS = \
-	-Wall -Werror \
-	-fPIE
-socket_sucker_LDFLAGS = \
-	-pie
 
 x2go_session_wrapper_SOURCES = \
 	x2go-session-wrapper.c
