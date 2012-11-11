@@ -1,3 +1,11 @@
+lightdm-remote-session-x2go (0.0.0.1-0~x2go2) UNRELEASED; urgency=low
+
+  [ Jan Engelhardt ]
+  * New upstream version (0.0.0.2):
+    - Use socat instead of socket-sucker.c from lightdm-remote-session-freerdp.
+
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Sun, 11 Nov 2012 13:12:23 +0100
+
 lightdm-remote-session-x2go (0.0.0.1-0~x2go1) unstable; urgency=low
 
   * Initial upstream release. Forked from Canonical's

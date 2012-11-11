@@ -19,6 +19,7 @@ Architecture: any
 Depends: 
  ${shlibs:Depends},
  ${misc:Depends},
+ socat,
  zenity,
  pyhoca-cli (>= 0.2.1.0-0~),
  libpam-x2go,

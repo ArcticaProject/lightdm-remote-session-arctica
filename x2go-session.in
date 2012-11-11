@@ -20,10 +20,11 @@
 # Author lightdm-remote-session-freerdp (where we forked from): Ted Gould <ted@canonical.com>
 #
 
-if [ -e ~/.x2go-socket ]; then
-	@libexecdir@/socket-sucker | /usr/bin/pyhoca-cli --from-stdin --add-to-known-hosts --kbd-type auto --sound pulse 2>&1 | logger -t lightdm-remote-session-x2go --
+socket="$HOME/.x2go-socket";
+if [ -e "$socket" ]; then
+	socat unix-connect:"$socket" - | /usr/bin/pyhoca-cli --from-stdin --add-to-known-hosts --kbd-type auto --sound pulse 2>&1 | logger -t lightdm-remote-session-x2go --
 else
 	zenity --warning --text="Unable to locate X2GoSession/PyHoca socket"
 fi;
 
-rm -f ~/.x2go-socket
+rm -f "$socket"
