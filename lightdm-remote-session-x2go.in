@@ -2,6 +2,7 @@
 # Profile for restricting lightdm remote session for X2Go
 # Based on the Guest Account Apparmor script from:
 # Author: Martin Pitt <martin.pitt@ubuntu.com>
+#         Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 
 #include <tunables/global>
 

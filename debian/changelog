@@ -1,6 +1,9 @@
 lightdm-remote-session-x2go (0.0.1.0-0~x2go1) UNRELEASED; urgency=low
 
-  * Continue development...
+  * New upstream version (0.0.0.2):
+    - Stop being a drop-in replacement for lightdm-remote-login-freerdp.
+      Become an independent package that provides server type »x2go« to
+      the remote-login-service.
 
  -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Wed, 24 Apr 2013 17:52:57 +0200
 
