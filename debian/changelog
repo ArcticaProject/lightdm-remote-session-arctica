@@ -4,6 +4,8 @@ lightdm-remote-session-x2go (0.0.1.0-0~x2go1) UNRELEASED; urgency=low
     - Stop being a drop-in replacement for lightdm-remote-login-freerdp.
       Become an independent package that provides server type »x2go« to
       the remote-login-service.
+    - Prepare for becoming able to use PyHoca-CLI _or_ X2Go Client for
+      handling the X2Go session being launched via remote login.
 
  -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Wed, 24 Apr 2013 17:52:57 +0200
 

@@ -21,11 +21,12 @@ Depends:
  ${misc:Depends},
  socat,
  zenity,
- pyhoca-cli (>= 0.2.1.0-0~),
+ pyhoca-cli (>= 0.2.1.0-0~) | x2goclient (>= 4.0.1.1-0~),
  libpam-x2go,
- lightdm (>= 1.3.3-0~)
+ lightdm (>= 1.3.3-0~),
 Suggests:
  apparmor,
 Description: Log into X2Go sessions via LightDM
  The configuration files needed and scripts required to login
- to a full screen X2Go session using LightDM and PyHoca / Python X2Go.
+ to a full screen X2Go session using LightDM and PyHoca / Python X2Go
+ or X2Go Client.
