@@ -1,11 +1,10 @@
-
 pam_sessiondir = $(sysconfdir)/pam.d/
 pam_session_DATA = \
 	lightdm-remote-x2go
 
 lightdm_sessiondir = $(datadir)/lightdm/remote-sessions
 lightdm_session_DATA = \
-	freerdp.desktop
+	x2go.desktop
 
 %.desktop: %.desktop.in
 	@sed -e "s|\@libexecdir\@|$(libexecdir)|" $< > $@
@@ -20,9 +19,9 @@ x2go-session: x2go-session.in
 
 apparmordir = $(sysconfdir)/apparmor.d/
 apparmor_DATA = \
-	lightdm-remote-session-freerdp
+	lightdm-remote-session-x2go
 
-lightdm-remote-session-freerdp: lightdm-remote-session-freerdp.in
+lightdm-remote-session-x2go: lightdm-remote-session-x2go.in
 	@sed -e "s|\@libexecdir\@|$(libexecdir)|" $< > $@
 
 libexec_PROGRAMS = \
@@ -36,14 +35,14 @@ x2go_session_wrapper_CFLAGS = \
 
 EXTRA_DIST = \
 	$(pam_session_DATA) \
-	freerdp.desktop.in \
+	x2go.desktop.in \
 	x2go-session.in \
-	lightdm-remote-session-freerdp.in
+	lightdm-remote-session-x2go.in
 
 CLEANFILES = \
-	freerdp.desktop \
+	x2go.desktop \
 	x2go-session \
-	lightdm-remote-session-freerdp
+	lightdm-remote-session-x2go
 
 DISTCHECK_CONFIGURE_FLAGS = --enable-localinstall
 
