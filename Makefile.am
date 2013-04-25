@@ -1,4 +1,3 @@
-
 pam_sessiondir = $(sysconfdir)/pam.d/
 pam_session_DATA = \
 	lightdm-remote-x2go
