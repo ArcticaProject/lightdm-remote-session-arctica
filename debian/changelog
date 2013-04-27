@@ -1,4 +1,4 @@
-lightdm-remote-session-x2go (0.0.1.0-0~x2go1) UNRELEASED; urgency=low
+lightdm-remote-session-x2go (0.0.1.0-0~x2go1) unstable; urgency=low
 
   * New upstream version (0.0.1.0):
     - Stop being a drop-in replacement for lightdm-remote-login-freerdp.
@@ -7,7 +7,7 @@ lightdm-remote-session-x2go (0.0.1.0-0~x2go1) UNRELEASED; urgency=low
     - Prepare for becoming able to use PyHoca-CLI _or_ X2Go Client for
       handling the X2Go session being launched via remote login.
 
- -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Wed, 24 Apr 2013 17:52:57 +0200
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Sat, 27 Apr 2013 13:49:02 +0200
 
 lightdm-remote-session-x2go (0.0.0.2-0~x2go1) unstable; urgency=low
 
