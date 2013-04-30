@@ -60,6 +60,8 @@
   # necessary for writing to sockets, etc.
   /{,var/}run/** rmkix,
   /{,var/}run/shm/** wl,
+  # access to kernel's UUID generator (required by pyhoca-cli)
+  @{PROC}/sys/kernel/random/uuid r,
 
   capability ipc_lock,
 
