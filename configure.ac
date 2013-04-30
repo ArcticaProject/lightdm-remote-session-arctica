@@ -1,4 +1,4 @@
-AC_INIT([lightdm-remote-session-x2go], [0.0.1.0])
+AC_INIT([lightdm-remote-session-x2go], [0.0.1.1])
 
 AM_INIT_AUTOMAKE([1.11 -Wno-portability])
 AM_SILENT_RULES([yes])
