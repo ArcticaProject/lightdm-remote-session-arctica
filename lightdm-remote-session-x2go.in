@@ -62,6 +62,7 @@
   /{,var/}run/shm/** wl,
   # access to kernel's UUID generator (required by pyhoca-cli)
   @{PROC}/sys/kernel/random/uuid r,
+  /var/lib/libuuid/clock.txt rw,
 
   capability ipc_lock,
 
