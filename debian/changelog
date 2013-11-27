@@ -4,6 +4,8 @@ lightdm-remote-session-x2go (0.0.1.1-0~x2go1) UNRELEASED; urgency=low
     - Add apparmor rule that grants read access to the kernel's random UUID
       generator.
     - Another apparmor rule: allow rw access to /var/lib/libuuid/clock.txt".
+  * debian/source/format:
+    + Switch to format 1.0.
 
  -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Tue, 30 Apr 2013 17:04:25 +0200
 
