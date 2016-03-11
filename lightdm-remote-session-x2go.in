@@ -63,6 +63,16 @@
   # access to kernel's UUID generator (required by pyhoca-cli)
   @{PROC}/sys/kernel/random/uuid r,
   /var/lib/libuuid/clock.txt rw,
+  /run/systemd/journal/dev-log w,
+  /tmp/**/.x2go-socket r,
+  /tmp/.X11-unix/X[0-9]* wr,
+  /run/uuidd/request w,
+  /proc/sys/kernel/ngroups_max r,
+
+  network,
+
+  dbus(send) bus=session,
+  dbus(send, receive) bus=accessibility,
 
   capability ipc_lock,
 
