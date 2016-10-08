@@ -1,48 +1,48 @@
 pam_sessiondir = $(sysconfdir)/pam.d/
 pam_session_DATA = \
-	lightdm-remote-x2go
+	lightdm-remote-arctica
 
 lightdm_sessiondir = $(datadir)/lightdm/remote-sessions
 lightdm_session_DATA = \
-	x2go.desktop
+	arctica.desktop
 
 %.desktop: %.desktop.in
 	@sed -e "s|\@libexecdir\@|$(libexecdir)|" $< > $@
 
 session_startdir = $(pkgdatadir)
 session_start_SCRIPTS = \
-	x2go-session
+	arctica-session
 
-x2go-session: x2go-session.in
+arctica-session: arctica-session.in
 	@sed -e "s|\@libexecdir\@|$(libexecdir)|" $< > $@
 	@chmod +x $@
 
 apparmordir = $(sysconfdir)/apparmor.d/
 apparmor_DATA = \
-	lightdm-remote-session-x2go
+	lightdm-remote-session-arctica
 
-lightdm-remote-session-x2go: lightdm-remote-session-x2go.in
+lightdm-remote-session-arctica: lightdm-remote-session-arctica.in
 	@sed -e "s|\@libexecdir\@|$(libexecdir)|" $< > $@
 
 libexec_PROGRAMS = \
-	x2go-session-wrapper
+	arctica-session-wrapper
 
-x2go_session_wrapper_SOURCES = \
-	x2go-session-wrapper.c
-x2go_session_wrapper_CFLAGS = \
+arctica_session_wrapper_SOURCES = \
+	arctica-session-wrapper.c
+arctica_session_wrapper_CFLAGS = \
 	-DPKGDATADIR="\"$(pkgdatadir)\"" \
 	-Wall -Werror
 
 EXTRA_DIST = \
 	$(pam_session_DATA) \
-	x2go.desktop.in \
-	x2go-session.in \
-	lightdm-remote-session-x2go.in
+	arctica.desktop.in \
+	arctica-session.in \
+	lightdm-remote-session-arctica.in
 
 CLEANFILES = \
-	x2go.desktop \
-	x2go-session \
-	lightdm-remote-session-x2go
+	arctica.desktop \
+	arctica-session \
+	lightdm-remote-session-arctica
 
 DISTCHECK_CONFIGURE_FLAGS = --enable-localinstall
 

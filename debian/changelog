@@ -1,42 +1,6 @@
-lightdm-remote-session-x2go (0.0.1.1-0) UNRELEASED; urgency=low
+lightdm-remote-session-arctica (0.0.1.1-0) UNRELEASED; urgency=low
 
-  * New upstream version (0.0.1.1):
-    - Add apparmor rule that grants read access to the kernel's random UUID
-      generator.
-    - Another apparmor rule: allow rw access to /var/lib/libuuid/clock.txt".
-  * debian/source/format:
-    + Switch to format 1.0.
+  * Upstream-provided Debian package for lightdm-remote-session-arctica.
+    See upstream ChangeLog for recent changes.
 
- -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Tue, 30 Apr 2013 17:04:25 +0200
-
-lightdm-remote-session-x2go (0.0.1.0-0~x2go1) unstable; urgency=low
-
-  * New upstream version (0.0.1.0):
-    - Stop being a drop-in replacement for lightdm-remote-login-freerdp.
-      Become an independent package that provides server type »x2go« to
-      the remote-login-service.
-    - Prepare for becoming able to use PyHoca-CLI _or_ X2Go Client for
-      handling the X2Go session being launched via remote login.
-
- -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Sat, 27 Apr 2013 13:49:02 +0200
-
-lightdm-remote-session-x2go (0.0.0.2-0~x2go1) unstable; urgency=low
-
-  [ Jan Engelhardt ]
-  * New upstream version (0.0.0.2):
-    - Use socat instead of socket-sucker.c from lightdm-remote-session-freerdp.
-
- -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Wed, 24 Apr 2013 17:52:15 +0200
-
-lightdm-remote-session-x2go (0.0.0.1-0~x2go1) unstable; urgency=low
-
-  * Initial upstream release. Forked from Canonical's
-    lightdm-remote-session-freerdp (by  Ted Gould <ted@canonical.com>).
-  * /debian/control:
-    + Be a drop-in replacement for lightdm-remote-session-freerdp for now
-      until Canonical offers X2Go sessions on
-      https://uccs.landscape.canonical.com.
-      -> Thus, conflict with and replace lightdm-remote-session-freerdp.
-    + Versioned dependency on pyhoca-cli (>= 0.2.1.0).
-
- -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Sat, 10 Nov 2012 22:19:55 +0100
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Sun, 09 Nov 2016 01:19:55 +0200

@@ -6,7 +6,7 @@
 
 #include <tunables/global>
 
-@libexecdir@/x2go-session-wrapper {
+@libexecdir@/arctica-session-wrapper {
   #include <abstractions/authentication>
   #include <abstractions/nameservice>
   #include <abstractions/wutmp>
@@ -64,7 +64,7 @@
   @{PROC}/sys/kernel/random/uuid r,
   /var/lib/libuuid/clock.txt rw,
   /run/systemd/journal/dev-log w,
-  /tmp/**/.x2go-socket r,
+  /tmp/**/.arctica-socket r,
   /tmp/.X11-unix/X[0-9]* wr,
   /run/uuidd/request w,
   /proc/sys/kernel/ngroups_max r,
