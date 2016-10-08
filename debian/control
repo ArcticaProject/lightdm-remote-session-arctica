@@ -9,7 +9,7 @@ Build-Depends:
  dh-apparmor,
  cdbs,
  dh-autoreconf,
-Standards-Version: 3.9.4
+Standards-Version: 3.9.8
 Homepage: http://wiki.arctica.org
 Vcs-Git: https://github.com/ArcticaProject/lightdm-remote-session-arctica
 Vcs-Browser: https://github.com/ArcticaProject/lightdm-remote-session-arctica
